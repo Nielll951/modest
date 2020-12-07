@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modest</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <!--
+        xs - mobile 
+        sm - tablet
+        md - laptop
+        lg - desktop
+    -->
+   <header class="header">
+       <div class="container">
+           <div class="row header-row"><!--flex-container-->
+               <div class="col-xs-12 col-md-2 logo"><!--flex-item.вычисляем кол-во колонок по макету.xs-mobile phone-->
+                   <a href="">
+                       <img src="images/modest.png" alt="">
+                   </a>
+               </div>
+               <div class="col-xs-12 col-md-8 menu"><!--flex-item-->
+                 <nav>
+                     <ul class="menu"><!--можно не исп."ul",а сразу "a"-->
+                        <li class="li_home"><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">WORK</a></li>
+                        <li><a href="">TEAM</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">FEATURES</a></li>
+                        <li><a href="">CONTACT</a></li>
+                     </ul>
+                 </nav>
+               </div>
+               <div class="col-xs-12 col-md-2 div_search"><!--flex-item-->
+                <form action="" class="form_search">
+                  <input type="text" class="search" placeholder="SEARCH">
+                  <button class="button_search"></button>
+                </form>                
+               </div>
+           </div>
+       </div>
+   </header>
+   <main>
+       <div class="slider">Slider</div>
+   </main> 
+</body>
+</html>
