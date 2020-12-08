@@ -15,7 +15,7 @@ body {
     top: 0;
 }
 .logo {
-    margin-top: 3px;
+    margin-top: 5px;
 }
 .menu {
     display: flex;
@@ -134,4 +134,12 @@ body {
 }
 .btn-holder button:last-child {
     margin-left: 10px;
+}
+.background {
+    border-bottom: 1px solid #c7c8ca;
+    height: 610px;
+}
+.section1 {
+    width: 100%;
+    height: 610px;
 }
