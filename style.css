@@ -241,6 +241,7 @@ body {
     justify-content: space-between;
     margin-top: 63px;
 }
+
 .name-container {
     width: inherit;
     height: 73px;
@@ -248,12 +249,73 @@ body {
     padding: 10px 20px;
     line-height: 1.5;
     margin-top: -2px;
+    color: black;
+}
+.position {
+    color: #8d8f92;
+}
+.name-container:hover {
+    background-color: #38434a;
+    color: white;
 }
 .name {
     font-size: 16px;
     font-weight: 600;
 }
-.position {
-    color: #8d8f92;
+
+.hover {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    left: 22%;
+}
+.photo {
+    display: flex;
+    position: relative;
+}
+[class*="social-"] {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #38434a;
+    margin: 1px;
+}
+.lovely-work {
+    height: 900px;
+    background-color: #3a454d;
+    display: flex;
+    justify-content: center;
+}
+.lov-wor-con {
+    display: flex;
+    flex-direction: column;
+}
+.h2-lovely-work-title {
+    font-size: 36px;
+    color: white;
+}
+.lovely-work-photos {
+    height: 560px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lovely-work-photo {
+    width: 360px;
+    height: 265px;
+    flex-basis: 33%;
+    flex-grow: 1;
+}
+.btn-show-me-more {
+    font-size: 14px;
+    color: white;
+    border: 2px solid white;
+    background-color: inherit;
+    border-radius: 5px;
+    padding: 17px 20px;
+}
+.btn-show-me-more:hover {
+    border: none;
+    background-color: #39a493;
+    padding: 19px 22px;
 }
 
