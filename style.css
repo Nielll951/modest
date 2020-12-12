@@ -115,7 +115,7 @@ body {
     font-size: 36px;
     color: white;
 }
-.col-md-7 p {
+.paragraph-1 {
     font-size: 16px;
     color: #a7adb6;
     margin: 30px 0;
@@ -135,11 +135,125 @@ body {
 .btn-holder button:last-child {
     margin-left: 10px;
 }
-.background {
+.about-us {
     border-bottom: 1px solid #c7c8ca;
     height: 610px;
 }
 .section1 {
     width: 100%;
     height: 610px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+.col-md-7 {
+    width: 58.333%;
+    height: 425px;
+}
+.col-md-5 {
+    width: 41.667%;
+    height: 425px;
+    flex-direction: column;
+    margin-top: 20%;
+}
+.we-are-modest {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+.bold-sentence {
+    font-weight: bold;
+}
+.img-social {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.img-social img {
+    width: 60px;
+    height: 60px;
+    background-color: #c8cdd0;
+}
+.img-social a {
+    text-decoration: none;
+    margin-right: 1px;
+}
+.we_are_modest_paragraph {
+    color: #8d8f92;
+    line-height: 1.5;
+}
+.modest-container {
+    display: flex;
+    justify-content: space-around;
+}
+.square-text {
+    width: 100%;
+    height: 73px;
+    display: flex;
+    margin-bottom: 30px;
+}
+.square {
+    color: white;
+    background-color: #39a493;
+    font-size: 20px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    flex-shrink: 0;
+}
+.square-h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.square-par {
+    color: #8d8f92;
+    line-height: 1.5;
+}
+.h2parbox {
+    margin-left: 20px;
+}
+.team {
+    height: 650px;
+}
+.section2 {
+    width: 100%;
+    height: 650px;
+}
+.h2-meet-the-team {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 85px;
+    margin-left: 25px;
+}
+.col-md-3 {
+    width: 263px;
+    height: 375px;
+    flex-direction: column;
+}
+.all-members {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px;
+}
+.name-container {
+    width: inherit;
+    height: 73px;
+    background-color: #e1e6ea;
+    padding: 10px 20px;
+    line-height: 1.5;
+    margin-top: -2px;
+}
+.name {
+    font-size: 16px;
+    font-weight: 600;
+}
+.position {
+    color: #8d8f92;
+}
+
