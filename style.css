@@ -290,14 +290,17 @@ body {
     display: flex;
     flex-direction: column;
 }
-.h2-lovely-work-title {
+.h2-lovely-work {
     font-size: 36px;
     color: white;
+    padding-top: 85px;
+    padding-left: 25px;
 }
 .lovely-work-photos {
     height: 560px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 63px;
 }
 .lovely-work-photo {
     width: 360px;
@@ -312,6 +315,7 @@ body {
     background-color: inherit;
     border-radius: 5px;
     padding: 17px 20px;
+    margin: 64px auto;
 }
 .btn-show-me-more:hover {
     border: none;
