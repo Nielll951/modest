@@ -322,4 +322,36 @@ body {
     background-color: #39a493;
     padding: 19px 22px;
 }
+.what-we-do {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+}
+.section-what-we-do {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.what-we-do-items {
 
+}
+[class*="pic-"] {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+.pic-settins {
+    background-image: url(images/settings.png);   
+}
+.pic-pencil {
+    background-image: url(images/pencil.png);
+}
+.pic-phone {
+    background-image: url(images/phone.png);
+}
+.pic-clock {
+    background-image: url(images/clock.png);
+}
+.h3-what-we-do {
+    font-size: 17px;
+}
