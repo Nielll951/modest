@@ -4,7 +4,6 @@
 body {
     min-height: 1500px;
     font-family: 'Open Sans', sans-serif; 
-    max-width: ;
 }
 .header {
     background-color: black;
@@ -86,14 +85,15 @@ body {
 }
 .main {
     height: 5330px; 
- 
+}
+.main-row {
+    display: flex;
+    flex-direction: column;
 }
 .slide {
     height: 660px;
     background-image: url(images/slide.png);
-    background-repeat: no-repeat;
-    
-    
+    background-repeat: no-repeat;      
 }
 .welcome {
     width: 1140px;
@@ -155,7 +155,6 @@ body {
     width: 41.667%;
     height: 100%;
     flex-direction: column;
-    margin-top: 20%;
 }
 .we-are-modest {
     font-size: 36px;
@@ -275,7 +274,6 @@ body {
     position: relative;
 }
 [class*="social-"] {
-    display: none;
     width: 50px;
     height: 50px;
     background-color: #38434a;
@@ -306,8 +304,7 @@ body {
 .lovely-work-photo {
     width: 360px;
     height: 265px;
-    flex-basis: 33%;
-    flex-grow: 1;
+    margin-bottom: 19px;
 }
 .btn-show-me-more {
     font-size: 14px;
@@ -316,7 +313,7 @@ body {
     background-color: inherit;
     border-radius: 7px;
     padding: 17px 20px;
-    margin: 64px auto;
+    margin: 37px auto;
 }
 .btn-show-me-more:hover {
     border: none;
@@ -389,6 +386,7 @@ body {
 }
 .col-md-4 {
     width: 33.333%;
+    flex-direction: column;
 }
 .features-items {
     height: 434px;
@@ -425,6 +423,13 @@ body {
     background-color: #3a454d;
     color: white;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .h2-stay-in-touch {
     font-size: 36px;
@@ -457,3 +462,30 @@ body {
     border: none;
     background-color: #39a493;
     padding: 19px 22px;
+}
+.social-icons-box {
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.twitter {
+    background-image: url(images/twitter.png);
+}
+.facebook {
+    background-image: url(images/facebooksmall.png);
+}
+.skype {
+    background-image: url(images/skype.png);
+}
+.be {
+    background-image: url(images/besmall.png);
+}
+.in {
+    background-image: url(images/in.png);
+}
+.footer-social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
