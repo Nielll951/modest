@@ -52,3 +52,9 @@
         flex-direction: column;
     }
 }
+@media(min-width: 1024px) {
+    .col-md-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
