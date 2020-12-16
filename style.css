@@ -86,9 +86,8 @@ body {
 .main {
     height: 5330px; 
 }
-.main-row {
+.we-are-modest-row {
     display: flex;
-    flex-direction: column;
 }
 .slide {
     height: 660px;
@@ -140,6 +139,13 @@ body {
     border-bottom: 1px solid #c7c8ca;
     height: 610px;
 }
+.container-flex {
+    display: flex;
+    align-items: center;
+}
+.we-are-modest-container {
+    justify-content: space-between;
+}
 .section1 {
     width: 100%;
     height: 610px;
@@ -159,8 +165,8 @@ body {
 .we-are-modest {
     font-size: 36px;
     font-weight: 600;
-    margin-bottom: 25px;
     margin-left: 25px;
+    margin-bottom: 30px;
 }
 .bold-sentence {
     font-weight: bold;
@@ -182,10 +188,15 @@ body {
 .we_are_modest_paragraph {
     color: #8d8f92;
     line-height: 1.5;
+    margin-top: 20px;
 }
-.modest-container {
+.we-are-modest-row {
     display: flex;
     justify-content: space-around;
+    margin-top: 90px;
+}
+.modest-promise {
+    align-self: flex-end;
 }
 .square-text {
     width: 100%;
