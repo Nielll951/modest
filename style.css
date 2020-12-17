@@ -264,6 +264,8 @@ body {
 }
 .position {
     color: #8d8f92;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 .name-container:hover {
     background-color: #38434a;
@@ -272,14 +274,42 @@ body {
 .name {
     font-size: 16px;
     font-weight: 600;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 12px;
 }
-
-.hover {
+.team-items {
+    width: 100%;
+    position: relative;
+}
+.team-item {
+    position: relative;
+    background-color: #e1e6ea;
+}
+.team-item:hover {
+    background-color:  #38434a;
+    color: white;
+}
+.team-item:hover > .text-item-our-team {
+    color: white;
+}
+.team-item:hover + .hover-socia-link {
+    opacity: 0.7;
+    visibility: visible;
+}
+.hover-socia-link {
     display: flex;
-    align-self: center;
     position: absolute;
-    left: 22%;
+    top: 35%;
+    left: 24%;
+    opacity: 0;
 }
+.hover-socia-link-item:hover {
+    background-color: #e1e6ea;
+    visibility: visible;
+    opacity: 1;
+}   
+
 .photo {
     display: flex;
     position: relative;
@@ -474,7 +504,7 @@ body {
     background-color: #39a493;
     padding: 19px 22px;
 }
-.social-icons-box {
+.soc-icons-box {
     width: 20px;
     height: 20px;
     background-position: center;
@@ -495,7 +525,7 @@ body {
 .in {
     background-image: url(images/in.png);
 }
-.footer-social-icons {
+.footer-soc-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
