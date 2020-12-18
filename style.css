@@ -339,6 +339,9 @@ body {
 .lovely-work-photo {
    position: relative;
 }
+.photo-bottom {
+    margin-top: 30px;
+}
 .work-item-hover {
     position: absolute;
     top: 0;
@@ -382,7 +385,7 @@ body {
     background-color: inherit;
     border-radius: 7px;
     padding: 17px 20px;
-    margin: 37px auto;
+    margin: 58px auto;
 }
 .btn-show-me-more:hover {
     border: none;
