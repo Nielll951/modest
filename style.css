@@ -168,6 +168,9 @@ body {
     margin-left: 25px;
     margin-bottom: 30px;
 }
+.we-are-modest-img-soclink:hover {
+    background-color: rgba(208, 213, 217, 0.9);
+}
 .bold-sentence {
     font-weight: bold;
 }
