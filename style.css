@@ -235,7 +235,7 @@ body {
 }
 .section2 {
     width: 100%;
-    height: 650px;
+    margin-top: 60px;
 }
 .h2-meet-the-team {
     font-size: 36px;
@@ -248,13 +248,7 @@ body {
     height: 375px;
     flex-direction: column;
 }
-.all-members {
-    width: 100%;
-    height: 375px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 63px;
-}
+
 .position {
     color: #8d8f92;
     margin-left: 20px;
@@ -331,7 +325,7 @@ body {
 .h2-lovely-work {
     font-size: 36px;
     color: white;
-    padding-top: 85px;
+    margin-top: 85px;
     padding-left: 25px;
 }
 .lovely-work-photos {
@@ -490,9 +484,6 @@ body {
     line-height: 1.5;
     padding-right: 10px;
 }
-.stay-in-touch {
-    height: 870px;
-}
 .footer {
     height: 95px;
     background-color: #3a454d;
@@ -506,6 +497,12 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.footer-contant {
+    justify-content: space-between;
+}
+.copyright {
+    padding-top: 4px;
+}
 .h2-stay-in-touch {
     font-size: 36px;
     font-weight: 600;
@@ -516,13 +513,20 @@ body {
     width: 50%;
     flex-direction: column;
 }
-.h5-contact-information {
+.stay-in-touch-row {
+    margin-top: 60px;
+}
+.contact-inf-title {
     font-size: 20px;
     font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', 'sans-serif';;
 }
-.stay-in-touch-p {
+.contact-inf-text {
     color: #8d8f92;
     font-size: 16px;
+    margin-top: 40px;
+    line-height: 1.6;
 }
 .btn-send-message {
     font-size: 14px;
@@ -543,6 +547,8 @@ body {
     height: 25px;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .soc-icons-box:hover {
     background-color: #8d8f92;
@@ -571,4 +577,11 @@ body {
     margin-left: 0;
     padding-left: 10px;
     border-left: 10px solid #c8cdd0;
+}
+.map-pic {
+    width: 100%;
+    height: 345px;
+}
+.stay-in-touch-map {
+    margin-top: 60px;
 }
