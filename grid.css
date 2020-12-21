@@ -21,9 +21,13 @@
 }
 
 /*tablet*/
-@media(min-width: 768px) {
+@media(min-width: 768px) and (max-width: 1023px) {
     .container {
         max-width: 720px;
+    }
+    .section-content {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 /*laptop*/
@@ -39,19 +43,40 @@
         flex: 0 0 66.66667%;/*вычисляем ширину колонки: x=8*100/12 */
         max-width: 66.66667%;/*блок не растянется больше этого значения*/
     }
+    .section-content {
+        margin-top: 60px;
+    }
+    .row {
+        flex-direction: row;
+    }
 }
 /*desktop*/
 @media(min-width: 1200px) {
     .container {
         max-width: 1140px;
     }
+    
 }
 /*only mobile phone*/
 @media (max-width: 767px) {/*for mobile phone*/
     .header-row {
         flex-direction: column;
     }
+    body {
+        margin: 0;
+    }
 }
+@media (min-width: 426px) {
+    .row {
+        flex-direction: row;
+    }
+    .container {
+        max-width: 1140;
+    }
+}
+
+
+
 @media(min-width: 1024px) {
     .col-md-4 {
         flex: 0 0 33.3333%;

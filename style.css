@@ -86,10 +86,10 @@ body {
 .main {
     height: 5330px; 
 }
-.we-are-modest-row {
+.section-content {
     display: flex;
 }
-.slide {
+.slider {
     height: 660px;
     background-image: url(images/slide.png);
     background-repeat: no-repeat;      
