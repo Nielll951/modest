@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-xs-12 col-md-8 menu">
                     <!--flex-item-->
-                    <nav class="menu-nav-scroll">
+                    <nav>
                         <ul class="menu">
                             <!--можно не исп."ul",а сразу "a"-->
                             <li class="li_home"><a href="">HOME</a></li>
@@ -44,38 +44,47 @@
                             <li><a href="">CONTACT</a></li>
                         </ul>
                     </nav>
+                    
                 </div>
                 <div class="col-xs-12 col-md-2 div_search">
                     <!--flex-item-->
-                    <form action="" class="form_search">
-                        <input type="text" class="search" placeholder="SEARCH">
+                    <form action method="GET" class="form_search">
+                        <div class="search-form_input">
+                           <input type="text" name="search-input" class="search" placeholder="SEARCH">
+                        </div>
                         <button class="button_search"></button>
                     </form>
                 </div>
             </div>
         </div>
-    </header> 
+    </header>
     <main class="main">
         <div class="slider">
-            <div class="container welcome">
-                <div class="welcome-content">
-                    <div class="col-md-7">
-                        <h1>WELCOME TO OUR MARKETPLACE</h1>
-                        <p class="paragraph-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi mhetus,
+            <div class="container">
+                <div class="row slider-row">
+                    <div class="slider-content col-xs-12 col-md-7">
+                        <h1 class="slider-title">WELCOME TO OUR MARKETPLACE</h1>
+                        <p class="slider-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi mhetus,
                             tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
-                        <div class="btn-holder">
-                            <button>VIEW MORE</button>
-                            <button>VIDEO TOUR</button>
+                        <div class="slider_links">
+                            <a href="#" class="slider-link link">view more</a>
+                            <a href="#" class="slider-link link">video tour</a>
                         </div>
                     </div>
+                    <div class="col-xs-12 col-md-5"></div>
                 </div>
             </div>
         </div>
-        <div class="about-us">
-            <div class="container container-flex">
+        <section class="about-us section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <h2 class="section-title section-title-black">WE ARE MODEST</h2>
+                    </div>
+                </div>
                 <div class="row section-content">
-                    <div class="col-md-7 we-are-modest-container">
-                        <h2 class="h2-we-are-modest">WE ARE MODEST</h2>
+                    <div class="col-xs-12 col-sm-6 col-md-7 we-are-modest-container">
+
                         <p class="we_are_modest_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed
                             molestie gravida. Crferm entum quismagma congue, vel sodales arcu vestibulum. Nunc
@@ -102,8 +111,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-5 modest-promise">
-                        <div class="square-text">
+                    <div class="col-xs-12 col-sm-6 col-md-5 modest-promise">
+                        <div class="square-item">
                             <div class="square">01</div>
                             <div class="h2parbox">
                                 <h2 class="square-h2">DEDICATION TO THE CUSTOMERS</h2>
@@ -111,7 +120,7 @@
                                     tristique nisi, vitae ullamcorpe risus.</p>
                             </div>
                         </div>
-                        <div class="square-text">
+                        <div class="square-item">
                             <div class="square">02</div>
                             <div class="h2parbox">
                                 <h2 class="square-h2">WORKING CLOSELY WITH OUR CLIENTS</h2>
@@ -119,7 +128,7 @@
                                     vitae. Suspendisse ut vehicula nibh.</p>
                             </div>
                         </div>
-                        <div class="square-text">
+                        <div class="square-item">
                             <div class="square">03</div>
                             <div class="h2parbox">
                                 <h2 class="square-h2">INCREASE HAPPINESS</h2>
@@ -130,71 +139,70 @@
                     </div>
                 </div>
             </div>
+        </section>
         </div>
-        </div>
-        <div class="team">
+        <div class="team section-padding">
             <div class="container">
-                <div class="row main-row">
+                <div class="row">
                     <div class="col-xs-12 col-md-12">
-                        <h2 class="h2-meet-the-team">MEET THE TEAM</h2>
+                        <h2 class="section-title section-title-black">MEET THE TEAM</h2>
                     </div>
                 </div>
-                <div class="row section2">
-                    
-                        <div class="team-items col-sm-6 col-md-3">
-                            <div class="team-item">
-                                <img src="images/man1.png" alt="">
-                                <div class="hover-socia-link">
-                                    <a href="" class="hover-socia-link-item facebook"></a>
-                                    <a href="" class="hover-socia-link-item twitter"></a>
-                                    <a href="" class="hover-socia-link-item in"></a>
-                                </div>
-                                <p class="name text-item-our-team">GLORIA BROMLEY</p>
-                                <p class="position">CEO and founder</p>
+                <div class="row team-row section-content">
+                    <div class="team-items col-xs-12 col-sm-6 col-md-3">
+                        <div class="team-item">
+                            <img src="images/man1.png" class="team-item-img" alt="">
+                            <div class="hover-socia-link">
+                                <a href="" class="hover-socia-link-item facebook"></a>
+                                <a href="" class="hover-socia-link-item twitter"></a>
+                                <a href="" class="hover-socia-link-item in"></a>
                             </div>
+                            <p class="name text-item-our-team">GLORIA BROMLEY</p>
+                            <p class="position">CEO and founder</p>
                         </div>
+                    </div>
 
-                        <div class="team-items col-sm-6 col-md-3">
-                            <div class="team-item">
-                                <img src="images/man2.png" alt="">
-                                <div class="hover-socia-link">
-                                    <a href="" class="hover-socia-link-item facebook"></a>
-                                    <a href="" class="hover-socia-link-item twitter"></a>
-                                    <a href="" class="hover-socia-link-item in"></a>
-                                </div>
-                                <p class="name">PAUL TORRES</p>
-                                <p class="position">Head of Development</p>
+                    <div class="team-items col-xs-12 col-sm-6 col-md-3">
+                        <div class="team-item">
+                            <img src="images/man2.png" class="team-item-img" alt="">
+                            <div class="hover-socia-link">
+                                <a href="" class="hover-socia-link-item facebook"></a>
+                                <a href="" class="hover-socia-link-item twitter"></a>
+                                <a href="" class="hover-socia-link-item in"></a>
                             </div>
+                            <p class="name text-item-our-team">PAUL TORRES</p>
+                            <p class="position">Head of Development</p>
                         </div>
+                    </div>
 
-                        <div class="team-items col-sm-6 col-md-3">
-                            <div class="team-item">
-                                <img src="images/girl.png" alt="">
-                                <div class="hover-socia-link">
-                                    <a href="" class="hover-socia-link-item facebook"></a>
-                                    <a href="" class="hover-socia-link-item twitter"></a>
-                                    <a href="" class="hover-socia-link-item in"></a>
-                                </div>
-                                <p class="name">JUDITH GILLETTE</p>
-                                <p class="position">Graphic Desinger</p>
+                    <div class="team-items col-xs-12 col-sm-6 col-md-3">
+                        <div class="team-item">
+                            <img src="images/girl.png" class="team-item-img" alt="">
+                            <div class="hover-socia-link">
+                                <a href="" class="hover-socia-link-item facebook"></a>
+                                <a href="" class="hover-socia-link-item twitter"></a>
+                                <a href="" class="hover-socia-link-item in"></a>
                             </div>
+                            <p class="name">JUDITH GILLETTE</p>
+                            <p class="position">Graphic Desinger</p>
                         </div>
+                    </div>
 
-                        <div class="team-items col-sm-6 col-md-3">
-                            <div class="team-item">
-                                <img src="images/man3.png" class="team-item-img" alt="">
-                                <div class="hover-socia-link">
-                                    <a href="" class="hover-socia-link-item facebook"></a>
-                                    <a href="" class="hover-socia-link-item twitter"></a>
-                                    <a href="" class="hover-socia-link-item in"></a>
-                                </div>
-                                <p class="name">DELORES REED</p>
-                                <p class="position">Clien Service Director</p>
+                    <div class="team-items col-xs-12 col-sm-6 col-md-3">
+                        <div class="team-item">
+                            <img src="images/man3.png" class="team-item-img" alt="">
+                            <div class="hover-socia-link">
+                                <a href="" class="hover-socia-link-item facebook"></a>
+                                <a href="" class="hover-socia-link-item twitter"></a>
+                                <a href="" class="hover-socia-link-item in"></a>
                             </div>
+                            <p class="name">DELORES REED</p>
+                            <p class="position">Clien Service Director</p>
                         </div>
-                    
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
         </div>
         <section class="lovely-work">
@@ -269,7 +277,7 @@
                         <button class="btn-show-me-more btn-link">SHOW ME MORE</button>
                     </div>
                 </div>
-            </div>           
+            </div>
         </section>
         <div class="what-we-do">
             <div class="container what-we-do-container">
@@ -406,4 +414,5 @@
         </div>
     </footer>
 </body>
+
 </html>

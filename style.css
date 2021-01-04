@@ -7,7 +7,6 @@ body {
 }
 .header {
     background-color: black;
-    height: 80px;
     display: flex;
     align-items: center; 
     position: sticky;
@@ -30,6 +29,10 @@ body {
     justify-content: center;
     margin-top: 2px;
 }
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 .menu a {
     text-decoration: none;
     color: #a59493;
@@ -49,28 +52,38 @@ body {
     border-radius: 4px;
 }
 .search {
-    background-color: inherit;
-    width: 198px;
-    height: 30px;
-    border: 2px solid #3c4147;
-    border-radius: 4px;
-    padding-left: 7px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 6px;
+    height: 100%;
+    width: 100%;
+    color: #a4aead;
 }
 .button_search {
     background-image: url(images/search.png);
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 95%;
     background-position: center;
     background-color: inherit;
     border: none;
     color: #8b7879;
-    position: absolute;
-    left: 83%;
-    top: 0;
 }
 .form_search {
-    position: relative;
+    height: 26px;
+    border: 2px solid #5b6168;
+    border-radius: 4px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-form_input {
+    width: 85%;
+    height: 95%;
+    align-self: flex-start;
 }
 .col-md-8 {
     padding-top: 5px;
@@ -90,35 +103,27 @@ body {
     display: flex;
 }
 .slider {
-    height: 660px;
     background-image: url(images/slide.png);
-    background-repeat: no-repeat;      
+    background-repeat: no-repeat; 
+    background-size: cover;     
 }
-.welcome {
-    width: 1140px;
-    display: flex;
-    align-items: center;
+.slider-row {
+   padding-top: 21%;
 }
-.welcome-content {
-    width: 100%;
-    height: 185px;
-    vertical-align: middle;
-}
-.col-md-7 {
-    width: 58.333%;
+.slider-content {
     display: flex;
     flex-direction: column;
 }
-.col-md-7 h1 {
+.slider-title {
     font-size: 36px;
     color: white;
 }
-.paragraph-1 {
+.slider-text {
     font-size: 16px;
     color: #a7adb6;
     margin: 30px 0;
 }
-.btn-holder button {
+.link {
     background-color: inherit;
     color: white;
     border: 2px solid white;
@@ -126,19 +131,15 @@ body {
     padding: 15px 25px;
     cursor: pointer;
 }
-.btn-holder button:hover {
+.link:hover {
     border: 2px solid #39a493;
     background-color: #39a493;
 }
-.btn-holder button:last-child {
+.link:last-child {
     margin-left: 10px;
 }
 .about-us {
     border-bottom: 1px solid #c7c8ca;
-}
-.container-flex {
-    display: flex;
-    align-items: center;
 }
 .we-are-modest-container {
     justify-content: space-between;
@@ -150,8 +151,19 @@ body {
     flex-direction: row;
     align-items: center;
 }
+.section-title {
+    font-size: 36px;   
+    padding-left: 15px;
+}
+.section-title-black {
+    color: #292f36;
+    border-left: 10px solid #e1e6ea;
+    font-weight: 600;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
 .col-md-7 {
-    width: 58.333%;
+    max-width: 58.33333%;
+    flex: 0 0 58.33333%;
 }
 .col-md-5 {
     width: 41.667%;
@@ -186,18 +198,15 @@ body {
 .we_are_modest_paragraph {
     color: #8d8f92;
     line-height: 1.5;
-    margin-top: 20px;
+    margin-bottom: 35px;
 }
 .we-are-modest-row {
     display: flex;
     justify-content: space-around;
     margin-top: 90px;
 }
-.square-text {
-    width: 100%;
-    height: 73px;
+.square-item {
     display: flex;
-    margin-bottom: 30px;
 }
 .square {
     color: white;
@@ -221,16 +230,10 @@ body {
 }
 .h2parbox {
     margin-left: 20px;
+    margin-bottom: 35px;
 }
 .section2 {
-    width: 100%;
     margin-top: 60px;
-}
-.h2-meet-the-team {
-    font-size: 36px;
-    font-weight: 600;
-    margin-top: 85px;
-    margin-left: 25px;
 }
 .col-md-3 {
     width: 25%;
@@ -240,23 +243,30 @@ body {
 .position {
     color: #8d8f92;
     margin-left: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
 }
 .name {
     font-size: 16px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 20px;
     margin-bottom: 12px;
+}
+.team-row {
+    display: flex;
 }
 .team-items {
     width: 100%;
     position: relative;
 }
 .team-item {
-    position: relative;
     background-color: #e1e6ea;
     cursor: pointer;
+    margin-bottom: 35px;
+}
+.team-item-img {
+    display: block;
+    width: 100%;
 }
 .team-item:hover {
     background-color:  #38434a;
@@ -392,6 +402,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 90px;
+}
+.section-padding {
+    margin-top: 80px;
+    margin-bottom: 65px;
 }
 .what-we-do-items {
     align-items: center;
