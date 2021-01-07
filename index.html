@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-xs-12 col-md-8 menu">
                     <!--flex-item-->
-                    <nav>
+                    <nav class="menu-nav-scroll">
                         <ul class="menu">
                             <!--можно не исп."ul",а сразу "a"-->
                             <li class="li_home"><a href="">HOME</a></li>
@@ -44,13 +44,13 @@
                             <li><a href="">CONTACT</a></li>
                         </ul>
                     </nav>
-                    
+
                 </div>
                 <div class="col-xs-12 col-md-2 div_search">
                     <!--flex-item-->
                     <form action method="GET" class="form_search">
                         <div class="search-form_input">
-                           <input type="text" name="search-input" class="search" placeholder="SEARCH">
+                            <input type="text" name="search-input" class="search" placeholder="SEARCH">
                         </div>
                         <button class="button_search"></button>
                     </form>
@@ -79,7 +79,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
-                        <h2 class="section-title section-title-black">WE ARE MODEST</h2>
+                        <h2 class="section-title section-title-black">we are modest</h2>
                     </div>
                 </div>
                 <div class="row section-content">
@@ -112,30 +112,32 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-5 modest-promise">
-                        <div class="square-item">
-                            <div class="square">01</div>
-                            <div class="h2parbox">
-                                <h2 class="square-h2">DEDICATION TO THE CUSTOMERS</h2>
-                                <p class="square-par">Integer ver lacus non dui ullamcorper venelatis. Aliquam vitae
-                                    tristique nisi, vitae ullamcorpe risus.</p>
-                            </div>
-                        </div>
-                        <div class="square-item">
-                            <div class="square">02</div>
-                            <div class="h2parbox">
-                                <h2 class="square-h2">WORKING CLOSELY WITH OUR CLIENTS</h2>
-                                <p class="square-par">Sed blandit nidi urna, sed pellentesque enim consectetur
-                                    vitae. Suspendisse ut vehicula nibh.</p>
-                            </div>
-                        </div>
-                        <div class="square-item">
-                            <div class="square">03</div>
-                            <div class="h2parbox">
-                                <h2 class="square-h2">INCREASE HAPPINESS</h2>
-                                <p class="square-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                                    eleifend laoreet euismod</p>
-                            </div>
-                        </div>
+                        <ul class="modest-promise-list">
+                            <li class="modest-promise-item">
+                                <div class="square">01</div>
+                                <div class="h2parbox">
+                                    <h2 class="square-h2">DEDICATION TO THE CUSTOMERS</h2>
+                                    <p class="square-par">Integer ver lacus non dui ullamcorper venelatis. Aliquam vitae
+                                        tristique nisi, vitae ullamcorpe risus.</p>
+                                </div>
+                            </li>
+                            <li class="modest-promise-item">
+                                <div class="square">02</div>
+                                <div class="h2parbox">
+                                    <h2 class="square-h2">WORKING CLOSELY WITH OUR CLIENTS</h2>
+                                    <p class="square-par">Sed blandit nidi urna, sed pellentesque enim consectetur
+                                        vitae. Suspendisse ut vehicula nibh.</p>
+                                </div>
+                            </li>
+                            <li class="modest-promise-item">
+                                <div class="square">03</div>
+                                <div class="h2parbox">
+                                    <h2 class="square-h2">INCREASE HAPPINESS</h2>
+                                    <p class="square-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                        eleifend laoreet euismod</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -205,12 +207,16 @@
         </div>
         </div>
         </div>
-        <section class="lovely-work">
+        <section class="lovely-work section-padding">
             <div class="container">
-                <h2 class="h2-lovely-work">LOVELY WORK</h2>
-                <div class="row lovely-work-photos">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lovely-work-photo">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <h2 class="section-title section-title-white">LOVELY WORK</h2>
+                    </div>
+                </div>
+                <div class="row work-row section-content">
+                    <div class="work-content col-xs-12 col-sm-6 col-md-4">
+                        <div class="work-item">
                             <img src="images/ropeway.png" alt="" class="foto">
                             <div class="work-item-hover">
                                 <div class="work-item-img-hover"></div>
@@ -219,7 +225,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="lovely-work-photo photo-bottom">
+                    </div>
+                    <div class="work-content col-xs-12 col-sm-6 col-md-4">
+                        <div class="work-item">
                             <img src="images/abudabi.png" alt="" class="foto">
                             <div class="work-item-hover">
                                 <div class="work-item-img-hover"></div>
@@ -229,9 +237,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="lovely-work-photo">
+                    <div class="work-content col-xs-12 col-sm-6 col-md-4">
+                        <div class="work-item">
                             <img src="images/road.png" alt="" class="foto">
                             <div class="work-item-hover">
                                 <div class="work-item-img-hover"></div>
@@ -240,7 +247,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="lovely-work-photo photo-bottom">
+                    </div>
+                    <div class="work-content col-xs-12 col-sm-6 col-md-4">
+                        <div class="work-item">
                             <img src="images/harbor.png" alt="" class="foto">
                             <div class="work-item-hover">
                                 <div class="work-item-img-hover"></div>
@@ -250,9 +259,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4">
-                        <div class="lovely-work-photo">
+                    <div class="work-content col-xs-12 col-sm-6 col-md-4">
+                        <div class="work-item">
                             <img src="images/mountains.png" alt="" class="foto">
                             <div class="work-item-hover">
                                 <div class="work-item-img-hover"></div>
@@ -261,7 +269,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="lovely-work-photo photo-bottom">
+                    </div>
+                    <div class="work-content col-xs-12 col-sm-6 col-md-4">
+                        <div class="work-item">
                             <img src="images/bird.png" alt="" class="foto">
                             <div class="work-item-hover">
                                 <div class="work-item-img-hover"></div>
@@ -279,140 +289,188 @@
                 </div>
             </div>
         </section>
-        <div class="what-we-do">
-            <div class="container what-we-do-container">
-                <h2 class="h2-what-we-do">WHAT WE DO</h2>
-                <div class="row col-md-12">
-                    <section class="section-what-we-do">
-                        <article class="col-md-3 what-we-do-items">
-                            <div class="pic-settins"></div>
-                            <h3 class="h3-what-we-do">EASY THEME SETUP</h3>
-                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                                Maecenas a justo nec velit egestas fermentum.</p>
-                        </article>
-                        <article class="col-md-3 what-we-do-items">
-                            <div class="pic-pencil"></div>
-                            <h3 class="h3-what-we-do">PIXEL PERFECT DESIGN</h3>
-                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                                Maecenas a justo nec velit egestas fermentum.</p>
-                        </article>
-                        <article class="col-md-3 what-we-do-items">
-                            <div class="pic-phone"></div>
-                            <h3 class="h3-what-we-do">RESPONSIVE DISPLAY</h3>
-                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                                Maecenas a justo nec velit egestas fermentum.</p>
-                        </article>
-                        <article class="col-md-3 what-we-do-items">
-                            <div class="pic-clock"></div>
-                            <h3 class="h3-what-we-do">24/7 SUPPORT</h3>
-                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                                Maecenas a justo nec velit egestas fermentum.</p>
-                        </article>
-                        <article class="col-md-3 what-we-do-items">
-                            <div class="pic-settins"></div>
-                            <h3 class="h3-what-we-do">EASY THEME SETUP</h3>
-                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                                Maecenas a justo nec velit egestas fermentum.</p>
-                        </article>
-                        <article class="col-md-3 what-we-do-items">
-                            <div class="pic-pencil"></div>
-                            <h3 class="h3-what-we-do">PIXEL PERFECT DESIGN</h3>
-                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                                Maecenas a justo nec velit egestas fermentum.</p>
-                        </article>
-                        <article class="col-md-3 what-we-do-items">
-                            <div class="pic-phone"></div>
-                            <h3 class="h3-what-we-do">RESPONSIVE DISPLAY</h3>
-                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                                Maecenas a justo nec velit egestas fermentum.</p>
-                        </article>
-                        <article class="col-md-3 what-we-do-items">
-                            <div class="pic-clock"></div>
-                            <h3 class="h3-what-we-do">24/7 SUPPORT</h3>
-                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
-                                Maecenas a justo nec velit egestas fermentum.</p>
-                        </article>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <div class="features">
-            <div class="container">
-                <div class="row features-row">
-                    <h2 class="h2-features">FEATURES</h2>
-                    <div class="features-items">
-                        <div class="features-item">
-                            <img src="images/field.png" alt="" class="features-img">
-                            <h4 class="h4-feature">product design: eams chairs</h4>
-                            <p class="feature-description">Eames disigns are certainly iconic. Everyone of us know at
-                                least two or three of their famous chairs. I would even risk saying that most of us
-                                dream about having a nice Eames.</p>
-                        </div>
-                        <div class="features-item">
-                            <img src="images/bike.png" alt="" class="features-img">
-                            <h4 class="h4-feature">elegant and colorful logos</h4>
-                            <p class="feature-description">I've always found logo design to be one of the most
-                                challenging things to be right. There's so much that a logo can say about a brand
-                                without actually saying it.</p>
-                        </div>
-                        <div class="features-item">
-                            <img src="images/clouds.png" alt="" class="features-img">
-                            <h4 class="h4-feature">a showcase of creative</h4>
-                            <p class="feature-description">It's always iteresting to see another designer's take on a
-                                famous website, app or even physical product. Different designers add their own
-                                personality and style.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="stay-in-touch">
+        <section class="what-we-do section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
-                        <h2 class="h2-stay-in-touch">STAY IN TOUCH</h2>
+                        <h2 class="section-title section-title-black">WHAT WE DO</h2>
+                    </div>
+                </div>
+                <div class="row what-we-do-row section-content">
+                    <div class="what-we-do-content col-xs-12 col-sm-6 col-md-3">
+                        <div class="what-we-do-item">
+                            <img src="images/settings.png" alt="services-img" class="services-item-img">
+                            <h3 class="what-we-do-title">EASY THEME SETUP</h3>
+                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                Maecenas a justo nec velit egestas fermentum.</p>
+                        </div>
+                    </div>
+                    <div class="what-we-do-content col-xs-12 col-sm-6 col-md-3">
+                        <div class="what-we-do-item">
+                            <img src="images/pencil.png" alt="services-img" class="services-item-img">
+                            <h3 class="what-we-do-title">PIXEL PERFECT DESIGN</h3>
+                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                Maecenas a justo nec velit egestas fermentum.</p>
+                        </div>
+                    </div>
+                    <div class="what-we-do-content col-xs-12 col-sm-6 col-md-3">
+                        <div class="what-we-do-item">
+                            <img src="images/phone.png" alt="services-img" class="services-item-img">
+                            <h3 class="what-we-do-title">RESPONSIVE DISPLAY</h3>
+                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                Maecenas a justo nec velit egestas fermentum.</p>
+                        </div>
+                    </div>
+                    <div class="what-we-do-content col-xs-12 col-sm-6 col-md-3">
+                        <div class="what-we-do-item">
+                            <img src="images/clock.png" alt="services-img" class="services-item-img">
+                            <h3 class="what-we-do-title">24/7 SUPPORT</h3>
+                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                Maecenas a justo nec velit egestas fermentum.</p>
+                        </div>
+                    </div>
+                    <div class="what-we-do-content col-xs-12 col-sm-6 col-md-3">
+                        <div class="what-we-do-item">
+                            <img src="images/settings.png" alt="services-img" class="services-item-img">
+                            <h3 class="what-we-do-title">EASY THEME SETUP</h3>
+                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                Maecenas a justo nec velit egestas fermentum.</p>
+                        </div>
+                    </div>
+                    <div class="what-we-do-content col-xs-12 col-sm-6 col-md-3">
+                        <div class="what-we-do-item">
+                            <img src="images/pencil.png" alt="services-img" class="services-item-img">
+                            <h3 class="what-we-do-title">PIXEL PERFECT DESIGN</h3>
+                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                                Maecenas a justo nec velit egestas fermentum.</p>
+                        </div>
+                    </div>
+                    <div class="what-we-do-content col-xs-12 col-sm-6 col-md-3">
+                        <div class="what-we-do-item">
+                            <img src="images/phone.png" alt="services-img" class="services-item-img">
+                            <h3 class="what-we-do-title">RESPONSIVE DISPLAY</h3>
+                            <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo commodo.
+                            Maecenas a justo nec velit egestas fermentum.</p>
+                        </div>
+                    </div>
+                    <div class="what-we-do-content col-xs-12 col-sm-6 col-md-3">
+                       <div class="what-we-do-item">
+                           <img src="images/clock.png" alt="services-img" class="services-item-img">
+                           <h3 class="what-we-do-title">24/7 SUPPORT</h3>
+                           <p class="text-what-we-do">Nunc mattis lorem in leo lobortis, ut venenatis justo   commodo.
+                           Maecenas a justo nec velit egestas fermentum.</p>
+                       </div>
                     </div>
                 </div>
             </div>
-            <div class="stay-in-touch-map">
-                <img src="images/map1.png" alt="" class="map-pic">
+        </div>
+        </section>
+        <section class="features section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <h2 class="section-title section-title-white">features</h2>
+                    </div>
+                </div>
+                    <div class="row features-row section-content">
+                        <div class="features-content col-xs-12 col-sm-4 col-md-4">
+                            <div class="features-item">
+                                <img src="images/field.png" alt="features-img" class="features-item-img">
+                                <h4 class="features-item-title">product design: eams chairs</h4>
+                                <p class="features-item-text">Eames disigns are certainly iconic. Everyone of us know at
+                                least two or three of their famous chairs. I would even risk saying that most of us
+                                dream about having a nice Eames.</p>
+                            </div>
+                        </div>
+                        <div class="features-content col-xs-12 col-sm-4 col-md-4">
+                            <div class="features-item">
+                                <img src="images/bike.png" alt="features-img" class="features-item-img">
+                                <h4 class="features-item-title">elegant and colorful logos</h4>
+                                <p class="features-item-text">I've always found logo design to be one of the most
+                                challenging things to be right. There's so much that a logo can say about a brand
+                                without actually saying it.</p>
+                            </div>
+                        </div>
+                        <div class="features-content col-xs-12 col-sm-4 col-md-4">
+                            <div class="features-item">
+                                <img src="images/clouds.png" alt="features-img" class="features-item-img">
+                                <h4 class="features-item-title">a showcase of creative</h4>
+                                <p class="features-item-text">It's always iteresting to see another designer's take on a
+                                famous website, app or even physical product. Different designers add their own
+                                personality and style.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <h2 class="section-title section-title-black">stay in touch</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-map section-content">
+                <img src="images/map1.png" alt="map-img" class="map-img">
             </div>
             <div class="container">
-                <div class="row stay-in-touch-row">
-                    <div class=" col-md-6 contact-content">
-                        <div class="contact-information-item">
-                            <h3 class="contact-inf-title">contact information</h3>
-                            <p class="contact-inf-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <div class="row stay-in-touch-row section-content">
+                    <div class="col-xs-12 col-sm-6 col-md-6 contact-content">
+                        <div class="contact-item">
+                            <h3 class="contact-item-title">contact information</h3>
+                            <p class="contact-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed
                                 molestie gravida.</p>
-                            <p class="contact-inf-text">Lorem ipsum dolor sit amet, <span
+                            <p class="contact-item-text">Lorem ipsum dolor sit amet, <span
                                     class="bold-sentence">consectetur adipiscing</span> elit.
                                 Sed nisi metus, tristique ndolor non, ornare sagittis dolor</p>
                         </div>
                     </div>
+                    <div class="contact-form-block col-xs-12 col-sm-6 col-md-6">
+                        <form action="" class="contact-form">
+                            <div class="contact-form-field">
+                                <p class="contact-form_input-title">your name</p>
+                                <div class="contant-form_input">
+                                    <input type="text" class="contact-form-input">
+                                </div>
+                            </div>
+                            <div class="contact-form-field">
+                                <p class="contact-form_input-title">your email</p>
+                                <div class="contant-form_input">
+                                    <input type="email" class="contact-form-input">
+                                </div>
+                            </div>
+                            <div class="contact-form-field message-field">
+                                <p class="contact-form_input-title">your message</p>
+                                <div class="contant-form_input">
+                                    <textarea name="messege" id="message" class="contact-form-input contact-form_message-input" ></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="btn-send-message contact-btn">send message</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <button class="btn-send-message">SEND MESSAGE</button>
-            </div>
-        </div>
+            
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="row footer-row">
-                <div class="col-xs-12 col-md-12 footer-contant">
-                    <p class="copyright">&copy Copyright 2014 by PSD Booster. All Rights Reserved.</p>
-                    <div class=" footer-soc-icons">
-                        <a href="" class="soc-icons-box twitter"></a>
-                        <a href="" class="soc-icons-box facebook"></a>
-                        <a href="" class="soc-icons-box skype"></a>
-                        <a href="" class="soc-icons-box be"></a>
-                        <a href="" class="soc-icons-box in"></a>
-                    </div>
+                <div class="footer_social">
+                    <ul class="footer_social-list">
+                        <li class="soc-icons-box twitter"></li>
+                        <li class="soc-icons-box facebook"></li>
+                        <li class="soc-icons-box skype"></li>
+                        <li class="soc-icons-box be"></li>
+                        <li class="soc-icons-box in"></li>
+                    </ul>
                 </div>
+                <p class="copyright">&copy Copyright 2014 by PSD Booster. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 </body>
-
 </html>
