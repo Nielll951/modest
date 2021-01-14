@@ -1,5 +1,6 @@
+/*mobile-first*/
 .container {
-    width: 100%;
+    width: 100%; /*не фиксированная ширина*/
     padding-left: 15px;/*смотрим отступы на макете*/
     padding-right: 15px;
     margin-left: auto;
@@ -9,6 +10,7 @@
     display: flex;
     margin-left: -15px; 
     margin-right: -15px;
+    flex-direction: column;
 }
 [class*="col-"] {
     padding-left: 15px;
@@ -22,6 +24,9 @@
         flex-direction: column;
         align-items: center;
         margin-top: -290px;
+    }
+    .div_search {
+        opacity: 0;
     }
     body {
         margin: 0;
@@ -41,9 +46,6 @@
     .features-img {
         max-width: 100%;
     }
-    .row {
-        flex-direction: column;
-    }
     .slider-title {
         font-size: 24px;
     }
@@ -53,6 +55,9 @@
     }
     .contact {
         padding-bottom: 35px;
+    }
+    .logo {
+        text-align: center;
     }
 }
 
@@ -70,27 +75,10 @@
         padding-right: 50px;
         margin: 0 auto;
     }
-    
-    .col-md-5 {
-        flex: 0 0 41.66667%;
-        max-width: 41.66667%;
-    }
-    .col-md-3 {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-    .col-md-4 {
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%;
-    }   
     .col-md-12 {
         flex: 0 0 100%;
         max-width: 100%;
     } 
-    .col-md-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
 }
 
 /*tablet*/
@@ -134,6 +122,10 @@
     .copyright {
         font-size: 14px;
         margin-top: 0;
+    }
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 }
 @media(max-width: 991px) { /* 991px */    
@@ -210,10 +202,7 @@
     .contact-item-text {
         font-size: 14px;
     }
-    .col-md-7 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+    
 }
     
 
@@ -227,7 +216,7 @@
         max-width: 16.66667%;
     }
     .col-md-8 {
-        flex: 0 0 66.66667%;/*вычисляем ширину колонки: x=8*100/12 */
+        flex: 0 0 66.66667%;/*вычисляем ширину колонки: x=8*100/12 или 100/12*8=x*/
         max-width: 66.66667%;/*блок не растянется больше этого значения*/
     }
     .welcome {

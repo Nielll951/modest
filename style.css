@@ -174,10 +174,6 @@ body {
     font-weight: 600;
     font-family: 'Quattrocento Sans', sans-serif;
 }
-.col-md-7 {
-    width: ;
-    flex: ;
-}
 .h2-we-are-modest {
     font-size: 36px;
     font-weight: 600;
@@ -242,7 +238,7 @@ body {
     margin-top: 10px;
     font-size: 16px;
 }
-.h2parbox {
+.about_our-goals-item_text {
     margin-left: 20px;
     margin-bottom: 35px;
 }
@@ -329,10 +325,6 @@ body {
 .section-title-white {
     color: #ffffff;
     border-left: 10px solid #4e5a62;
-}
-.work-row {
-    display: flex;
-    flex-wrap: wrap;
 }
 .work-content {
     margin-bottom: 35px;
