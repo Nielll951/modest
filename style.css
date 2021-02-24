@@ -749,7 +749,7 @@ body {
 
 .modal-block {
     width: 300px;
-    margin: 80px auto;
+    margin: 120px auto;
     height: 200px;
     border: 1px solid grey;
     background-color: white;
@@ -773,4 +773,12 @@ body {
 .modal-block button {
     border: 1px solid grey;
     padding: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
