@@ -452,6 +452,22 @@ body {
     border-radius: 7px;
     display: block;
     line-height: 38px;
+    cursor: pointer;
+}
+
+.link,
+.we-are-modest-img-soclink,
+.hover-socia-link,
+.hover-socia-link-item,
+.work-item-hover,
+.btn-show-me-more,
+.btn-send-message,
+.soc-icons-box {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .btn-show-me-more-block {
@@ -694,6 +710,7 @@ body {
     background-repeat: no-repeat;
     margin-left: 5px;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .soc-icons-box:hover {

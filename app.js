@@ -19,9 +19,9 @@ let modal = document.querySelector(".modal");
 let sendMessageBtn = document.querySelector(".more-details");
 let closeBtn = document.querySelector(".btn-close");
 
-console.log(modal)
-console.log(sendMessageBtn)
-console.log(closeBtn)
+// console.log(modal)
+// console.log(sendMessageBtn)
+// console.log(closeBtn)
 
 sendMessageBtn.addEventListener("click",openModal)
 
@@ -32,7 +32,7 @@ function openModal() {
 
 function closeModal() {
     modal.classList.add("hide");
-    modal.classList.remove("show");
+    modal.classList.remove("show"); 
 }
 
 closeBtn.addEventListener("click",closeModal)
@@ -50,7 +50,7 @@ modal.addEventListener("click",function(e) {
 function showModalByScroll() {
     if(window.pageYOffset > document.body.scrollHeight/2) {
         openModal()
-        window.removeEventListener("scroll",showModalByScroll)// на событии scroll удалить ф. showModalByScroll.
+        window.removeEventListener("scroll",showModalByScroll)// на событии scroll удалить ф. showModalByScroll.git 
     }
 }
 
