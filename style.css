@@ -31,6 +31,8 @@ body {
     margin-right: 4px;
 }
 
+.menu li a {}
+
 .col-md-8 {
     justify-content: center;
     margin-top: 2px;
@@ -462,7 +464,8 @@ body {
 .work-item-hover,
 .btn-show-me-more,
 .btn-send-message,
-.soc-icons-box {
+.soc-icons-box,
+.menu li a {
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -ms-transition: all 0.3s ease 0s;
